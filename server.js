@@ -15,33 +15,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false,
 });
 
-require("./routes/homeRoutes")(app);
-require("./routes/workoutRoutes")(app);
+app.use(require("./routes/homeRoutes"));
+app.use(require("./routes/workoutRoutes"));
 
 app.listen(PORT, () => {
   console.log(`Now listening on port ${PORT}`);
 });
-
-//app.use(express.router)
-
-/**
- * 
- * function apiRoutes(app) {
-  app.get("/api/workouts", (req, res) => {
-    db.find({}, function(error, data) {
-        console.log(data)
-        res.json({})
-    }
-  )})
-
-
-  app.get("/api/work", () =>{
-      console.log("help")
-      res.json({});
-  })
-}
-
-apiRoutes(app) IS THE SAME AS LINE 18
- */
-//require("APIROUTE") = APIROUTE
-//APIROUTE(app)
