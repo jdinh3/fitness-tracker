@@ -26,3 +26,5 @@ app.use(require("./controllers/routes/workoutRoutes"));
 app.listen(PORT, () => {
   console.log(`Now listening on port ${PORT}`);
 });
+
+
