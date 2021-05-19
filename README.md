@@ -11,7 +11,7 @@ This project utilizes MongoDB, Mongoose, and Express server for routing.
 [Add Exercise Page](assets/images/localhost_3000_exercise_id=609596cc9205fef3a389afff.png)
 [Stats Page](assets/images/localhost_3000_stats.png)
 ## Deployed Site
-![Deployed Site](https://stark-refuge-78989.herokuapp.com/)
+[Deployed Site](https://stark-refuge-78989.herokuapp.com/?id=6096d3b98d88890015c4f1a4)
 ## License 
 
 This project is licensed under MIT License.
